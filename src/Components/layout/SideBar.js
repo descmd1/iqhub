@@ -17,7 +17,18 @@ import {
 } from "react-icons/bi";
 
 import { BsBookmark, BsCheckAll, BsFillTelephoneFill } from "react-icons/bs";
-import { FaBookmark, FaBookOpen, FaList } from "react-icons/fa6";
+import {
+  FaBookmark,
+  FaBookOpen,
+  FaList,
+  FaTiktok,
+  FaTwitter,
+  FaSquareFacebook,
+  FaAlignJustify,
+  FaToggleOn,
+  FaUserGraduate,
+  FaPaperclip,
+} from "react-icons/fa6";
 
 import { FaRegThumbsUp } from "react-icons/fa";
 
