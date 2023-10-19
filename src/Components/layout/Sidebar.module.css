@@ -1,0 +1,31 @@
+.sidebar__container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2px, 4px;
+  width: 150px;
+  background: #fff;
+  height: 100vh;
+}
+.sidebar__items {
+  align-items: center;
+  display: flex;
+  gap: 3px;
+  cursor: pointer;
+  align-content: start;
+  justify-content: flex-start;
+  border-bottom: 0.1px solid rgb(201, 198, 198);
+  margin-top: 10px;
+  width: 150px;
+  margin-bottom: 30px;
+}
+.sidebar__items :hover {
+  background-color: rgb(230, 225, 225);
+  width: 150px;
+}
+.sidebar__container :active {
+  color: rgb(211, 179, 243);
+  width: 150px;
+}
