@@ -1,9 +1,8 @@
 import React, { Fragment, useState } from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
-import classes from "./Signup.module.css";
+import classes from "./AdminSignup.module.css";
 import { FiEye, FiEyeOff } from "react-icons/fi";
-import { Link, useNavigate } from "react-router-dom";
 
 const validationSchema = Yup.object().shape({
   firstname: Yup.string().required("first name is required"),
@@ -16,28 +15,27 @@ const validationSchema = Yup.object().shape({
   confirmPassword: Yup.string().required("please confirm password"),
 });
 
-const SignUp = () => {
+const AdminSignUp = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
-  const navigate = useNavigate();
 
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
   };
-  const toggleConfirmPasswordVisibility = () => {
-    setShowConfirmPassword(!showConfirmPassword);
-  };
+//   const toggleConfirmPasswordVisibility = () => {
+//     setShowConfirmPassword(!showConfirmPassword);
+//   };
   const initialValues = {
     firstname: "",
     lastName: "",
     phone: "",
     email: "",
     password: "",
-    confirmPassword: "",
+    status: "",
   };
 
   const handleSubmit = (values) => {
-    navigate('/login')
+    // Handle form submission here, e.g., send data to the server
     console.log(values);
   };
 
@@ -127,31 +125,31 @@ const SignUp = () => {
           </div>
           <div>
             <Field
-                 type={showConfirmPassword ? "text" : "password"}
-              id="confirmPassword"
-              name="confirmPassworf"
-              placeholder="Confirm password"
+                 type="text"
+              id="status"
+              name="status"
+              placeholder="set status (e.g Tutor)"
               className={classes.login__email}
             />
-            <span onClick={toggleConfirmPasswordVisibility} className={classes.eyeIcon}>
+            {/* <span onClick={toggleConfirmPasswordVisibility} className={classes.eyeIcon}>
               {showConfirmPassword ? <FiEye /> : <FiEyeOff /> } 
             </span>
             <ErrorMessage
               name="confirmPassword"
               component="div"
               className={classes.error__message}
-            />
+            /> */}
           </div>
           <button type="submit" className={classes.login__button}>
             Register
           </button>
-        <Link to='/login' > <button className={classes.login__account}>
+          <button className={classes.login__account}>
             Already have account? Login
-          </button></Link>
+          </button>
         </Form>
       </Formik>
     </Fragment>
   );
 };
 
-export default SignUp;
+export default AdminSignUp;

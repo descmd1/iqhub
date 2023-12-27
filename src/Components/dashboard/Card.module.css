@@ -1,0 +1,72 @@
+.card__container{
+    display: flex;
+    justify-content: flex-start;
+    /* border: 1px solid #dfdddd;
+    border-radius: 8px; */
+    width: 50rem;
+    flex-direction: column;
+    padding: 5px;
+}
+.card_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    border: 1px solid #fff;;
+    background: #fff;
+  border-radius: 5px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+.card_item_box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.icon_div{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.card_button_box{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.card_btn{
+    width: 150px;
+    height: 30px;
+    padding: auto;
+    background: #3c8ace;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    align-items: center;
+    cursor: pointer;
+}
+.card_btn :active
+.card_btn :hover{
+    background: peachpuff;
+}
+
+.searchInputContainer {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .searchIcon {
+    margin-right: 10px;
+  }
+  
+  input {
+    border: none;
+    background: transparent;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+  }

@@ -1,24 +1,15 @@
-import React , { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import React , { Fragment, useState } from "react";
 import { FaSearch } from "react-icons/fa";
-import classes from "./Header.module.css"
-import { useAuth } from "../../utils/Auth";
-import { Link } from "react-router-dom";
+import classes from "./AdminHeader.module.css"
 
 
 const Header = () => {
-  const auth = useAuth()
-const navigate = useNavigate()
+
   const [searchInput, setSearchInput] = useState("");
 
   const handleSearchInputChange = (e) => {
     setSearchInput(e.target.value);
   };
-
-  const handleLogout = () => {
-    // auth.logout()
-    navigate('/')
-  }
 
   // const filteredData = data.filter((item) => {
   //   const lowerCaseTitle = item.courseTitle.toLowerCase();
@@ -35,28 +26,23 @@ const navigate = useNavigate()
       <nav>
         <ul>
           <li>
-            Courses
+            <a href="#">Courses</a>
           </li>
           <li>
-            About Us
+            <a href="#">About Us</a>
           </li>
           <li>
-            Article
+            <a href="#">Articles</a>
           </li>
           <li>
-            Contact
+            <a href="#">Contact</a>
           </li>
         </ul>
       </nav>
-      <div className={classes.headbtn}>
-        {/* {
-         !auth.user && (
-       
-         ) 
-        } */}
-     <Link to='/login'> <button className={classes.btn_login}>Login</button>   </Link>
-      <button className={classes.btn_login} onClick={handleLogout}>Logout</button>
-      </div>
+      {/* <div className={classes.headbtn}> */}
+      {/* <button className={classes.btn_login}>Login</button> */}
+      <button className={classes.btn_login}>Logout</button>
+      {/* </div> */}
     </header>
       <div className={classes.card__container}>
       <div className={classes.searchInputContainer}>

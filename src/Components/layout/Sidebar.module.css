@@ -8,15 +8,15 @@
   width: 150px;
   background: #fff;
   height: 100vh;
+  margin-top: -4rem;
 }
 .sidebar__items {
   align-items: center;
   display: flex;
   gap: 3px;
   cursor: pointer;
-  align-content: start;
+  align-content: flex-start;
   justify-content: flex-start;
-  border-bottom: 0.1px solid rgb(201, 198, 198);
   margin-top: 10px;
   width: 150px;
   margin-bottom: 30px;
@@ -24,8 +24,12 @@
 .sidebar__items :hover {
   background-color: rgb(230, 225, 225);
   width: 150px;
+  height: 50px;
+  position: fixed;
 }
 .sidebar__container :active {
-  color: rgb(211, 179, 243);
+  color: white;
   width: 150px;
+  background-color: rgb(191, 136, 243);
 }
+

@@ -1,10 +1,8 @@
 import React, { Fragment, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
-import classes from "./login.module.css";
+import classes from "./Adminlogin.module.css";
 import { FiEye, FiEyeOff } from "react-icons/fi";
-import { useAuth } from "../../utils/Auth";
 
 const validationSchema = Yup.object().shape({
   email: Yup.string()
@@ -12,11 +10,8 @@ const validationSchema = Yup.object().shape({
     .required("Email is required"),
   password: Yup.string().required("Password is required"),
 });
-const Login = () => {
+const AdminLogin = () => {
   const [showPassword, setShowPassword] = useState(false);
-  const [ user, setUser ] = useState('')
-const auth =  useAuth()
-const navigate = useNavigate()
 
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
@@ -28,9 +23,10 @@ const navigate = useNavigate()
   };
 
   const handleSubmit = (values) => {
-   navigate('/dashboard')
+    // Handle form submission here, e.g., send data to the server
+    console.log(values);
   };
-console.log ('errors')
+
   return (
     <Fragment className={classes.container}>
       {/* <Header /> */}
@@ -75,13 +71,13 @@ console.log ('errors')
           <button type="submit" className={classes.login__button}>
             Login
           </button>
-         <Link to='/signup'> <button className={classes.login__account}>
+          <button className={classes.login__account}>
             Don't have account? register
-          </button></Link>
+          </button>
         </Form>
       </Formik>
     </Fragment>
   );
 };
 
-export default Login;
+export default AdminLogin;

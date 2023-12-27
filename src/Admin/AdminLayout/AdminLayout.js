@@ -1,16 +1,16 @@
 import React from "react";
-import Header from "../header/Header";
-import SideBar from "./SideBar";
-import './Layout.css'
+import AdminHeader from "../header/Header";
+import AdminSideBar from "./SideBar";
+import './AdminLayout.css'
 
 const Layout = ({ children }) => {
   return (
     <div className="layout">
       <header>
-        <Header />
+        <AdminHeader />
       </header>
       <aside>
-      <SideBar />
+      <AdminSideBar />
       </aside>
       <main>{children}</main>
     </div>

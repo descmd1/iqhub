@@ -1,0 +1,65 @@
+.assessment__container{
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    flex-direction: column;
+    width: 800px;
+    border: 1 solid white;
+    border-radius: 10px;
+    background: white;
+    padding: 8px;
+}
+
+.preview__container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: stretch;
+    width: 800px;
+    border: 1 solid white;
+    border-radius: 10px;
+    background: white;
+    padding: 8px;
+}
+.assessment__form{
+    margin-left: 1rem;
+    margin-top: -35rem;
+}
+.__inputs{
+width: 595px;
+margin-bottom: 10px;
+border: 1 solid rgb(142, 140, 140);
+border-radius: 10px;
+color: black;
+background: rgb(245, 244, 244);
+height: 30px;
+}
+.assessment_box{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    background: white;
+    border: 0.5px solid rgb(245, 244, 244);
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin-top: -35rem;
+    margin-left: 23rem;
+}
+.assBtn{
+    display: flex;
+    width: 60px;
+    background: #3c8ace;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    align-items: center;
+    justify-content: center;
+}
+.previewBtn_box{
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    justify-content: space-between;
+}

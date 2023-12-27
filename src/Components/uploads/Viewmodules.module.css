@@ -1,0 +1,149 @@
+.view_module{
+    display: flex;
+    flex-direction: row;
+    margin-top: -35rem;
+    width: 1050px;
+    justify-content: space-between;
+    margin-left: 15rem;
+}
+.view_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid white;
+    width: 600px;
+    background: white;
+    border-radius: 10px;
+    gap: 24px;
+    padding: 8px;
+}
+.__span{
+    display: flex;
+    align-items: center;
+    width: 590px;
+}
+.markIcon{
+    color: green;
+}
+.view__section{
+    display: flex;
+    flex-direction: row;
+    width: 520px;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2rem;
+}
+.content_button {
+    display: flex;
+    width: 250px;
+    height: 40px;
+    background: #3c8ace;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    gap: 5px;
+    cursor: pointer;
+}
+.resource_button {
+    display: flex;
+    width: 250px;
+    height: 40px;
+    background: gray;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    border-radius: 8px;
+    border: none;
+    gap: 5px;
+    cursor: pointer;
+}
+.resourceIcon{
+    transform: rotate(45deg);
+}
+.video_container{
+display: flex;
+align-items: center;
+justify-content: center;
+width: 596px;
+}
+
+.faqbox{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 200px;
+    border: none;
+    border-radius: 10px;
+    border: 1px solid white;
+    background: white;
+    justify-content: space-between;
+    padding: 5px;
+}
+.topics{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    border: none;
+    border-radius: 8px;
+    color: black;
+    height: 40px;
+    cursor: pointer;
+}
+.questions{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    color: black;
+    cursor: pointer;
+}
+
+.back{
+    display: flex;
+    align-items: center;
+    background: #3c8ace;
+    justify-content: center;
+    width: 40px;
+    height: 20px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    margin-left: 16.2rem;
+}
+.end{
+    display: flex;
+    flex-direction: column;
+}
+.__buttons{
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    justify-content: space-between;
+}
+.video__title{
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    margin-top: -4rem;
+}
+.video__span{
+    display: flex;
+    width: 300px;
+    flex-wrap: wrap;
+    color: black;
+    align-items: center;
+}
+.playIcon{
+display: flex;
+background: gray;
+border: none;
+border-radius: 50px;
+color: white;
+}
